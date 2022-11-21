@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {            
+            background-color: blueviolet;
+        }
+        
+        h1 {
+            font-family: sans-serif;
+            font-size: 2em;
+            text-align: center;
+            color: white;
+            text-shadow: 1px 1px 3px black;
+        }
+
+        p {
+            font-family: cursive;
+            font-size: 1em;
+            font-style: italic;
+            text-align: center;
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        form {
+            background-color: rgba(139, 0, 139, 0.5);
+            max-width: 500px;
+            margin: auto;
+            border-radius: 3px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+            padding: 25px;
+        }
+
+        label {
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+            font-size: .8em;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+        .data {            
+            display: block;
+        }
+        .data-input {
+            width: 500px;
+            height: 20px;
+            border-radius: 3px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            outline: none;
+        }
+        .data-input::placeholder, .placeholder {
+            font-size: .9em;
+        }
+
+        .role {
+            margin-top: 10px;
+        }
+
+        select {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            width: 508px;
+            height: 25px;
+            border-radius: 3px;
+        }
+
+        .text-area label {
+            display: block;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        textarea {
+            width: 500px;
+            box-shadow: 0 0 10px black;
+        }
+
+        button {
+            margin-top: 10px;
+            background-color: green;
+            width: 508px;
+            border: none;
+            height: 30px;
+            color: white;
+            box-shadow: 0 0 5px black;
+        }
+
+        button:hover {
+            background-color: rgb(3, 182, 3);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>freeCodeCamp Survey Form</h1>
+    <p>Thank you for taking the time to help us improve the platform</p>
+
+    <form>
+        <div class="name data">
+            <label for="name">Name</label>
+            <input type="text" name="name" placeholder="Enter your name" class="data-input">
+        </div>
+
+        <div class="email data">
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="Enter your Email" class="data-input">
+        </div>
+
+        <div class="age data">
+            <label for="age">Age(optional)</label>
+            <input type="number" name="age" placeholder="Age" class="data-input">
+        </div>
+
+        <div class="role data">
+            <label for="role">Which option best describes your current role?</label>
+            <select name="role" class="data">
+                <option value="" disabled selected class="placeholder">Select current role</option>
+                <option value="front-end">front-end</option>
+                <option value="back-end">back-end</option>
+                <option value="fullstack">fullstack</option>
+            </select>
+        </div>
+
+        <div class="recommend">
+            <label>Would you recommend freeCodeCamp to a friend?</label>
+            
+            <div>
+                <input type="radio" name="recommend">
+                <label>Definitely</label>
+            </div>
+
+            <div>
+                <input type="radio" name="recommend">
+                <label>Maybe</label>
+            </div>
+
+            <div>
+                <input type="radio" name="recommend">
+                <label>Not sure</label>
+            </div>
+        </div>
+
+        <div class="feature">
+            <label for="feature">What is your favorite feature of freeCodeCamp</label>
+            <select name="feature">
+                <option value="" selected disabled class="placeholder">Select an option</option>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+            </select>
+        </div>
+
+        <div class="checkbox">
+            <label for="checkbox">What would you like to see improved? (Check all that apply)</label>
+            <div>
+                <input type="checkbox">
+                <label>Front-end Projects</label>
+            </div>
+            <div>
+                <input type="checkbox">
+                <label>Back-end Projects</label>
+            </div>
+            <div>
+                <input type="checkbox">
+                <label>Data Visualization</label>
+            </div>
+            <div>
+                <input type="checkbox">
+                <label>Challenges</label>
+            </div>
+            <div>
+                <input type="checkbox">
+                <label>Open Source Community</label>
+            </div>
+        </div>
+
+        <div class="text-area">
+            <label for="text-area">Any comments or suggestions?</label>
+            <textarea name="text-area" id="" cols="30" rows="10"></textarea>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
