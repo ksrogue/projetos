@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <title>Formulário</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 100vh;
+            background-color: rgb(50, 50, 50);
+            background-image: linear-gradient(to bottom, rgb(50, 50, 50), rgb(100, 100, 100));
+        }
+
+        form {
+            background-color: white;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 15px;
+            padding: 25px;
+            box-shadow: 0 0 10px black;
+        }
+
+        .details, .home, .card {
+            padding: 10px;
+            margin-bottom: 15px;
+            background-color: white;
+            border-radius: 3px;
+        }
+
+        .input {
+            border: 1px solid black;
+            padding: 5px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        input {
+            border-radius: 5px;
+            outline: none;
+        }
+        label {
+            width: 30%;
+            display: inline-block;
+        }
+
+        button {
+            width: 200px;
+            height: 30px;
+            box-shadow: 0 0 5px black;
+            display: block;
+            margin: auto;
+            background-color: whitesmoke;
+            cursor: pointer;
+        }
+
+        .visa {
+            display: inline;
+        }
+
+        .mastercard {
+            display: inline;
+        }
+        img {
+            width: 50px;
+        }
+
+        button:hover {
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset class="details">
+            <legend>Seus detalhes</legend>
+
+            <div class="input">
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name" placeholder="Nome e sobrenome">
+            </div>
+
+            <div class="input">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="email@mail.com">
+            </div>
+
+            <div class="input">
+                <label for="phone">Telefone</label>
+                <input type="tel" name="phone" id="phone" placeholder="xx xxxxx-xxxx">
+            </div>
+        </fieldset>
+
+        <fieldset class="home">
+            <legend>Endereço</legend>
+
+            <div class="input">
+                <label for="address">Endereço</label>
+                <input type="text" name="address" id="address">
+            </div>
+
+            <div class="input">
+                <label for="cep">CEP</label>
+                <input type="text" name="cep" id="cep">
+            </div>
+
+            <div class="input">
+                <label for="city">Cidade</label>
+                <input type="text" name="city" id="city">
+            </div>
+        </fieldset>
+
+        <fieldset class="card">
+            <legend>Cartão de crédito</legend>
+
+            <div class="input">
+                <label for="card">Bandeira</label>
+
+                <div class="visa">
+                    <input type="radio" name="visa" id="card">
+                    <img src="img/visa.png" alt="visa card">
+                </div>
+
+                <div class="mastercard">
+                    <input type="radio" name="mastercard" id="card">
+                    <img src="img/mastercard.png" alt="mastercard card">
+                </div>
+            </div>
+
+            <div class="input">
+                <label for="number">Número do cartão</label>
+                <input type="text" name="number" id="number">
+            </div>
+
+            <div class="input">
+                <label for="ccv">CCV</label>
+                <input type="text" name="ccv" id="ccv">
+            </div>
+
+            <div class="input">
+                <label for="owner-name">Nome no cartão</label>
+                <input type="text" name="owner-name" id="owner-name">
+            </div>
+        </fieldset>
+
+        <button>Comprar</button>
+    </form>
+</body>
+</html>
