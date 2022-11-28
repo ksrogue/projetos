@@ -91,8 +91,7 @@
     }
     .div_game {
         background-color: whitesmoke;
-        margin-left: 10px;
-        margin-right: 10px;
+        margin: 10px;
         max-width: 243px;
         box-shadow: 1px 3px 5px rgba(50, 50, 50, .5);
     }
@@ -163,7 +162,7 @@
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 800px) {
    .era_ouro_div {
     display: block;
    } 
