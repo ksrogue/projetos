@@ -159,6 +159,7 @@
     footer a {
         text-decoration: none;
         font-weight: bolder;
+        color: whitesmoke;
     }
 }
 
@@ -193,5 +194,11 @@
     margin-top: 10px;
     margin-bottom: 10px;
     box-shadow: 0 0 10px black;
+   }
+
+   footer {
+     height: 1vh;
+     padding: 10px;
+     margin-bottom: 10px;
    }
 }
