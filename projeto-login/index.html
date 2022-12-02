@@ -20,37 +20,37 @@
                 <p>Bem vindo(a) de volta. Faça login para continuar.</p>
 
                 <form action="login.php" method="post" class="login">
-                    <div class="email">
+                    <div class="campo">
                         <i class="material-icons">person</i>
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email" required>
                         <label for="email">Email</label>
                     </div>
 
-                    <div class="password">
+                    <div class="campo">
                         <i class="material-icons">vpn_key</i>
-                        <input type="password" name="password" id="password">
+                        <input type="password" name="password" id="password" required minlength="8" maxlength="20">
                         <label for="password">Senha</label>
                     </div>
 
                     <input type="submit" value="ENTRAR">
                 </form>
 
-                <p>Ainda não é membro? <a href="#">Registre-se</a> para ter acesso a nossa plataforma.</p>
+                <p class="reg">Ainda não é membro? <a href="#">Registre-se</a> para ter acesso a nossa plataforma.</p>
 
                 <form class="register">
-                    <div class="nome">
+                    <div class="campo">
                         <label for="name">Nome Completo</label>
                         <input type="text" name="name" id="name" required>
                     </div>
 
-                    <div class="email-reg">
+                    <div class="campo">
                         <label for="email-res">Email</label>
-                        <input type="email" name="email-reg" id="email-reg" required minlength="8" maxlength="20">
+                        <input type="email" name="email-reg" id="email-reg" required>
                     </div>
 
-                    <div class="password-reg">
+                    <div class="campo">
                         <label for="password-reg">Senha</label>
-                        <input type="password" name="password-reg" id="password-reg">
+                        <input type="password" name="password-reg" id="password-reg" required min="8" max="20">
                     </div>
 
                     <input type="submit" value="registrar">
