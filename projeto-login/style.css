@@ -94,13 +94,13 @@ div.campo i {
 div.campo input {
     background-color: var(--verde);
     font-size: 1em;
-    width: calc(100% - 44.5px);
+    width: calc(100% - 45px);
     height: 100%;
     border: none;
     border-radius: 8px;
     outline: none;
     padding: 4px;
-    transform: translateY(-12px);
+    transform: translateY(-13px);
 }
 
 div.campo input:focus-within {
@@ -128,11 +128,4 @@ form > input[type=submit]:hover {
 
 .reg {
     text-align: center;   
-}
-
-
-
-
-.register {
-    display: none;
 }
