@@ -9,7 +9,7 @@
 
 
 * {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -54,13 +54,19 @@ section#login > div#form {
     padding: 10px;
 }
 
-div#form > h1 {
+#form > h1 {
     text-align: center;
-    margin-bottom: 10px;
+    font-family: fantasy;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, .8);
+    letter-spacing: 5px;
+    color: var(--verde);
+    margin-bottom: 10px;   
 }
 
 div#form > p {
     font-size: .8em;
+    text-align: center;
 }
 
 form > div.campo {
