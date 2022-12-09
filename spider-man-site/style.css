@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+:root {
+    --main-color: rgb(0, 0, 0);
+    --sec-color: rgb(50, 50, 50);
+    --red-color: rgb(150, 25, 25);
+
+    --main-font: 'Fjalla One';
+}
+
+* {
+    font-family: var(--main-font);
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--red-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+}
+header div {
+    width: 50px;
+    height: 60px;
+    background: url(img/avengers-symbol.png) center center no-repeat;
+    background-size: contain;
+    margin: 0px 50px;
+}
+header nav {
+    margin-right: 30px;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+header nav ul li {
+    margin: 10px;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: 1.3em;
+}
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    height: 75vh;
+    background-color: var(--main-color);
+    background-image: url(img/spider-man.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 30px;
+}
+main h1 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 2.2em;
+    text-shadow: 1px 1px 3px black;
+}
+main p {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+p span {
+    color: var(--red-color);
+}
+
+footer {
+    height: 4.7vh;
+    background-color: var(--red-color);
+    text-align: center;
+    padding-top: 10px;
+    color: var(--main-color);
+}
+footer a {
+    text-decoration: none;
+    font-size: var(--main-font);
+    color: #fff;
+    text-shadow: 1px 1px 3px black;
+
+    font-size: 1em;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    main {
+        padding: 0;
+        height: 83.5vh;
+    }
+    .main-txt {
+        text-align: center;
+    }
+    .main-txt h1 {
+        padding-top: 10px;
+        margin-bottom: 155px;
+        font-size: 1.3em;
+    }
+    .main-txt p {
+        text-align: left;
+        font-size: 1em;
+        padding-left: 10px;
+    }
+}
+
