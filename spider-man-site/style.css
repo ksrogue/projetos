@@ -15,7 +15,7 @@
 }
 
 body {
-    min-height: 100vh;
+    height: 100vh;
 }
 
 header {
@@ -53,7 +53,7 @@ header nav ul li a:hover {
 }
 
 main {
-    height: 75vh;
+    height: 75%;
     background-color: var(--main-color);
     background-image: url(img/spider-man.jpg);
     background-position: right;
