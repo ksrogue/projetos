@@ -9,47 +9,47 @@
 </head>
 <body>
     <header class="header">
-        <div>
-            <input type="text" placeholder="Temperatura de qual cidade?">
-            <button>
-                <img src="#" alt="Ícone de uma lupa">
+        <div class="search-bar">
+            <input type="text" placeholder="Temperatura de qual cidade?" class="header-input">
+            <button class="header-button">
+                <img src="assets/search-icon.svg" alt="Ícone de uma lupa" class="header-img">
             </button>
         </div>
-        <div>...</div>
-        <div>...</div>
+        <div class="current-date">Hoje, 25 de janeiro</div>
+        <div class="current-city">Barra do Mendes</div>
     </header>
 
-    <section class="currrent-temperature">
-        <img src="#" alt="">
-        <div>...</div>
-        <div>Tempo agora</div>
-        <div>...</div>
+    <section class="current-temperature">
+        <img src="assets/loading-icon.svg" alt="" class="weather-icon">
+        <div class="temperature-description">Parcialmente nublado</div>
+        <div class="info-label">Tempo agora</div>
+        <div class="temperature-degree">23°C</div>
     </section>
 
     <div class="bottom-container">
-        <section>
-            <div>
-                <div>Vento</div>
-                <div>...</div>
+        <section class="temperature-details">
+            <div class="item">
+                <div class="temperature-details-label">Vento</div>
+                <div class="temperature-details-value">6km</div>
             </div>
-            <div>
-                <div>Sensação</div>
-                <div>...</div>
+            <div class="item">
+                <div class="temperature-details-label">Sensação</div>
+                <div class="temperature-details-value">25°C</div>
             </div>
-            <div>
-                <div>Umidade</div>
-                <div>...</div>
+            <div class="item">
+                <div class="temperature-details-label">Umidade</div>
+                <div class="temperature-details-value">87%</div>
             </div>
         </section>
 
-        <section>
-            <div>
-                <img src="#" alt="Nascer do sol">
-                <div>...</div>
+        <section class="sunset-sunrise">
+            <div class="sunset-sunrise-item">
+                <img src="assets/sunrise.svg" alt="Nascer do sol" class="sunset-sunrise-icon">
+                <div class="sunset-sunrise-value">5:39</div>
             </div>
-            <div>
-                <img src="#" alt="Pôr do sol">
-                <div>...</div>
+            <div class="sunset-sunrise-item">
+                <img src="assets/sunset.svg" alt="Pôr do sol" class="sunset-sunrise-icon">
+                <div class="sunset-sunrise-value">18:57</div>
             </div>
         </section>
     </div>
