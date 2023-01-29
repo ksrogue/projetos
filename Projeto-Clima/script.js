@@ -1,8 +1,6 @@
-
 // interação
 const searchInput = document.getElementById('city-search-input');
 const searchButton = document.getElementById('city-search-button');
-
 // exibição
 const currentDate = document.getElementById('current-date');
 const currentCity = document.getElementById('current-city');
@@ -18,12 +16,11 @@ const sunsetTime = document.getElementById('sunset');
 const api_key = "9e17bb10eef44eca0e16b52105564c45";
 
 searchButton.addEventListener('click', () => {
-
     let cityName = searchInput.value;
     getCityWeather(cityName)
 })
 
-// quando o navegador carregar, irá pedir permissão para sabe a localização do usuário
+// quando o navegador carregar, irá pedir permissão para saber a localização do usuário
 navigator.geolocation.getCurrentPosition(
     (position) => {
         let lat = position.coords.latitude;
@@ -46,7 +43,6 @@ function getCurrentLocationWeather(lat, lon) {
 }
 
 function getCityWeather(cityName) {
-
     weatherIcon.src = `assets/loading-icon.svg`
     // fetch serve para buscar dados
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&lang=pt_br&appid=${api_key}`)
