@@ -1,184 +1,345 @@
-
-
-@media screen and (max-width: 500px) {
-    body {
-        background-color: #f1b1d1;
-        margin: 0;
-        padding: 0;
-        max-width: 100vw;
-    }
-    
-    header {
-        background-color: #de85b1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        box-shadow: 0px 3px 5px rgba(145, 4, 74, .5);
-    }
-    
-    .logo {
-        width: 200px;
-        margin: 10px;
-    }
-    
-    .menu {
-        text-decoration: none;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-weight: bold;
-        font-size: .9em;
-        margin-left: 1px;
-        padding-left: 3px;
-        letter-spacing: 2px;
-        color: #91044a;
-        border-left: 1px solid #91044a;
-        transition: .1s;
-    }
-    .menu:first-child {
-        border: none;
-    }
-    .menu:hover {
-        border: 1px solid #91044a;
-    }
-    
-    main {
-        margin-top: 10px;
-    }
-
-    .duvidas {
-        background-color: #de85b1;
-        box-shadow: 3px 3px 5px rgba(0, 0, 0, .5);
-        padding: 10px;
-    }
-
-    .duv-container {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    .duvidas h3 {
-        text-align: center;
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: bold;
-        color: #91044a;
-        margin: 0 0 5px 0;
-        text-shadow: 1px 1px 3px rgba(0, 0, 0, .5);    
-    }
-    .duv {
-        box-shadow: 2px 2px 3px rgba(0, 0, 0, .5);
-        border-radius: 8px;
-        max-width: 47%;
-        text-indent: 2px;
-        text-align: center;
-        margin: 2px;
-        padding: 3px;
-        background-color: #f1b1d1;
-    }
-    .duv-title {
-        text-align: center;
-        color: #740432;
-    }
-
-
-    .clientes {
-        margin-bottom: 10px;
-    }
-    .clientes h3 {
-        text-align: center;
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: bold;
-        color: #91044a;
-        text-shadow: 1px 1px 3px rgba(0, 0, 0, .5);    
-    }
-
-    .clientes-container {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-    .cliente {
-        width: 90px;
-        height: 90px;
-        border-radius: 50%;
-        box-shadow: 3px 3px 5px rgba(0, 0, 0, .5);
-        background-color: #CF3777;
-        margin: 5px;
-        transition: .1s;
-    }
-
-    .cliente:hover {
-        transform: scale(1.1);
-    }
-
-    
-    .serviços {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
- 
-    }
-    
-    .display {
-        width: 175px;
-        height: 175px;
-        background-color: #CF3777;
-        margin: 10px;
-        box-shadow: 3px 3px 5px rgba(0, 0, 0, .5);
-        transition: .1s;
-    }
-    .display:hover {
-        transform: scale(1.05);
-    }
-
-    .cuidados {
-        background-color: #de85b1;
-        padding: 3px;
-    }
-    .cuidados h3 {
-        text-align: center;
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: bold;
-        color: #91044a;
-        text-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
-        
-    }
-    .cuidados p {
-        text-indent: 3px;
-        color: #740432;
-        margin: 0 10px;
-    }
-    .cuidados li {
-        color: #740432;
-        text-decoration: none;
-        margin-top: 5px;
-    }
-    
-    
-    
-    footer {
-        height: 20px;
-        background-color: #bd2671;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: .9em;
-    }
-    .phone {
-        color: #91044a;
-        font-weight: bold;
-    }
-    .dev a{
-        text-decoration: none;
-        color: #91044a;
-        font-weight: bold;
-    }
-    
-    
+:root {
+    --bg-color: #f1b1d1;
+    --main-color: #de85b1;
+    --title-color: #91044a;
+    --p-color: #740432;
+    --box-color: #CF3777;
+    --shadow: rgba(0, 0, 0, 0.5)
 }
 
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+h3 {
+    color: var(--title-color);
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
+    margin: 0;
+   }
+
+
+@media screen and (max-width: 480px){
+
+    /* header */
+   .logo {
+    width: 200px;
+   }
+   header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-color);
+    box-shadow: 0px 3px 5px var(--shadow);
+    margin-bottom: 10px;
+   }
+   .menu {
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: .8em;
+    padding-left: 3px;
+    color: var(--title-color);
+    border-left: 1px solid var(--title-color);
+    transition: .1s;
+   }
+   .menu:first-child {
+    border: none;
+   }
+   .menu:hover {
+    border: 1px solid var(--title-color);
+   }
+
+   /* serviços */
+
+  .serviços {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  } 
+  .display {
+    width: 46%;
+    height: 170px;
+    background-color: var(--box-color);
+    margin: 5px;
+    box-shadow: 1px 1px 5px var(--shadow);
+    transition: .1s;
+  }
+  .display:hover {
+    transform: scale(1.05);
+  }
+
+  /* duvidas */
+
+  .duvidas {
+    background-color: var(--main-color);
+    box-shadow: 3px 3px 5px var(--shadow);
+    margin-bottom: 10px;
+  }
+  .duv-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .duv {
+    border-radius: 5px;
+    background-color: var(--bg-color);
+    width: 46%;
+    margin: 5px;
+    box-shadow: 3px 3px 5px var(--shadow);
+  }
+  .duv-title {
+    color: var(--title-color);
+    font-weight: bold;
+  }
+  .div-txt {
+    color: var(--p-color);
+  }
+
+  /* clientes */
+
+  .clientes {
+    margin-bottom: 10px;
+  }
+  .clientes-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .cliente {
+    width: 80px;
+    height: 80px;
+    margin: 4px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 5px var(--shadow);
+    background-color: var(--box-color);  
+    transition: .1s;
+  }
+  .cliente:hover {
+    transform: scale(1.05);
+  }
+
+  /* cuidados */
+
+  .cuidados {
+    background-color: var(--main-color);
+    box-shadow: 3px 3px 5px var(--shadow);
+  }
+  .cuidados p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-indent: 5px;
+    margin: 0 10px 0 10px;
+    color: var(--p-color);
+
+  }
+  .cuidados li {
+    color: var(--p-color);
+    font-family: sans 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 5px;
+  }
+
+  /* contato */
+
+  .contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: .8em;
+    color: var(--p-color);
+  }
+  .contato p {
+    margin: 3px;
+  }
+  .contato a {
+    text-decoration: none;
+    color: var(--title-color);
+  }
+
+  .dev-name {
+    background-color: var(--main-color);
+    width: 100vw;
+    text-align: center;
+  }
+   
+}
+
+@media screen and (min-width: 481px) {
+   /* header */
+   .logo {
+    width: 300px;
+   }
+   header {
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-color);
+    box-shadow: 0px 3px 5px var(--shadow);
+    margin-bottom: 10px;
+   }
+   .menu {
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 1em;
+    padding-left: 3px;
+    color: var(--title-color);
+    border-left: 1px solid var(--title-color);
+    transition: .1s;
+   }
+   .menu:first-child {
+    border: none;
+   }
+   .menu:hover {
+    border: 1px solid var(--title-color);
+   }
+
+   /* serviços */
+
+  .serviços {
+    max-width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto 10px;
+  } 
+  .display {
+    width: 400px;
+    height: 400px;
+    background-color: var(--box-color);
+    margin: 15px;
+    box-shadow: 1px 1px 5px var(--shadow);
+    transition: .1s;
+  }
+  .display:hover {
+    transform: scale(1.05);
+  }
+
+  /* duvidas */
+
+  .duvidas {
+    background-color: var(--main-color);
+    box-shadow: 3px 3px 5px var(--shadow);
+    margin-bottom: 10px;
+  }
+  .duv-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .duv {
+    border-radius: 5px;
+    background-color: var(--bg-color);
+    width: 250px;
+    margin: 15px;
+    box-shadow: 3px 3px 5px var(--shadow);
+  }
+  .duv:hover {
+    background-color: #eebbd4;
+  }
+  .duv-title {
+    color: var(--title-color);
+    font-weight: bold;
+  }
+  .div-txt {
+    color: var(--p-color);
+  }
+
+  /* clientes */
+
+  .clientes {
+    margin-bottom: 10px;
+  }
+  .clientes-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .cliente {
+    width: 250px;
+    height: 250px;
+    margin: 25px 10px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 5px var(--shadow);
+    background-color: var(--box-color);  
+    transition: .1s;
+  }
+  .cliente:hover {
+    transform: scale(1.05);
+  }
+
+  /* cuidados */
+
+  .cuidados {
+    background-color: var(--main-color);
+    box-shadow: 3px 3px 5px var(--shadow);
+  }
+  .cuidados p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-indent: 5px;
+    margin: 0 10px 0 10px;
+    color: var(--p-color);
+
+  }
+  .cuidados li {
+    color: var(--p-color);
+    font-family: sans 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 5px;
+  }
+
+  /* contato */
+
+  .contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: .8em;
+    color: var(--p-color);
+  }
+  .contato p {
+    margin: 3px;
+  }
+  .contato a {
+    text-decoration: none;
+    color: var(--title-color);
+  }
+
+  .dev-name {
+    background-color: var(--main-color);
+    width: 100vw;
+    text-align: center;
+  }
+   
+}
