@@ -9,29 +9,82 @@
         align-items: center;
         justify-content: center;
         margin: 10px 0;
-       }
-       .game-link {
-        display: none;
-       }
+    }
 
-       .logo-container {
+    .game-link {
+        display: none;
+    }
+
+    .logo-container {
         display: flex;
         align-items: center;
         justify-content: center;
-       }
-    
-       .desc-txt {
+    }
+
+    .desc-txt {
         text-align: center;
         margin: auto;
         width: 100%;
         height: auto;
-       }
-       .trailer {
+    }
+
+    .trailer {
         margin: 15px auto 0;
         display: block;
-       }
-    
-       .btn-content {
+    }
+
+    .btn {
+        width: 15px;
+        height: 15px;
+    }
+
+    .btn-content {
         margin-top: 75px;
-       }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .game-link {
+       display: none;
+    }
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .desc-txt {
+        text-align: center;
+        margin: auto;
+        padding: 15px 10% 15px;
+        width: 100%;
+        height: auto;
+    }
+
+    .trailer {
+        margin: 15px auto 0;
+        display: block;
+        transition: .3s ease-in-out;
+    }
+
+    .trailer:hover {
+        transform: scale(1.1);
+    }
+
+    .btn-content {
+        margin: 25px;
+    }
+
+    .btn {
+        width: 15px;
+        height: 15px;
+    }
 }
