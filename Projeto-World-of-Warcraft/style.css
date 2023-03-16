@@ -37,7 +37,7 @@ a {
     margin-bottom: 30px;
 }
 .game-link {
-    margin-right: 75%;
+    margin-right: 70%;
     filter: none;
 }
 
@@ -76,6 +76,10 @@ a {
 
 .info-container.info-active {
     display: block;
+}
+
+.logo-container {
+    margin-bottom: 15px;
 }
 
 .logo {

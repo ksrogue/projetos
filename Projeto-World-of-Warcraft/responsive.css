@@ -29,7 +29,7 @@
     }
 
     .trailer {
-        margin: 15px auto 0;
+        margin: 15px auto 15px;
         display: block;
     }
 
@@ -55,6 +55,10 @@
        display: none;
     }
 
+    .content {
+        margin-bottom: 50px;
+    }
+
     .logo-container {
         display: flex;
         align-items: center;
@@ -70,7 +74,7 @@
     }
 
     .trailer {
-        margin: 15px auto 0;
+        margin: 15px auto 15px;
         display: block;
         transition: .3s ease-in-out;
     }
