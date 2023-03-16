@@ -39,6 +39,10 @@ a {
 .game-link {
     margin-right: 70%;
     filter: none;
+    transition: .3s ease-in-out;
+}
+.game-link:hover {
+    border-bottom: 1px solid;
 }
 
 .icon-img {
@@ -107,6 +111,9 @@ a {
     box-shadow: 3px 3px 5px rgba(0, 0, 0, .3);
     margin-top: 10px;
     border-radius: 5px;
+}
+.trailer:hover {
+    transform: scale(1.1);
 }
 .trailer a {
     color: white;
