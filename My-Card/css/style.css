@@ -55,7 +55,7 @@ body {
     content: "";
     width: 360px;
     height: 640px;
-    background-image: url("My-Card/assets/bkg-light.svg");
+    background-image: url("/assets/bkg-light.svg");
     display: block;
     position: absolute;
     top: 0;
