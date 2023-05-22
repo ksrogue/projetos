@@ -9,6 +9,6 @@ function moveImg() {
         index = 0;
     }
 
-    galeria.style.transform = `translateX(${-index * 360}px)`;
+    galeria.style.transform = `translateX(${-index * 300}px)`;
 }
 
