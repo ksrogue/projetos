@@ -100,7 +100,7 @@ main section p {
 #galeria {
     width: 100%;
     background-image: url(media/gallery-background.jpg);
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
