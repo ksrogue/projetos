@@ -9,8 +9,10 @@ function ativarGaleria(button) {
     let main = document.getElementById("main");
     let header = document.getElementById("header");
     galeria.style.opacity = 1;
+    galeria.style.display = "flex";
     button.classList.add("hidden");
     main.classList.add("hidden");
     header.classList.add("hidden");
     setInterval(moveImg, 2500);
+    TransformStream.trans
 }
