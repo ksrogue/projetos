@@ -136,6 +136,7 @@ body {
         width: 384px;
         height: 512px; /* 450 */
         display: flex;
+        margin: 0 10px;
         transition: transform .5s ease-in;
         transform: translateX(0);
     }
