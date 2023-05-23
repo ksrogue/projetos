@@ -126,8 +126,7 @@ body {
         border-radius: 5px;
         overflow: hidden;
         max-width: 100%;
-        margin-top: 15px;
-        margin-bottom: 15px;
+        margin: 15px 10px;
         transition: transform .5 ease-in-out;
         box-shadow: 5px 5px 5px var(--black-shadow);
     }
@@ -136,7 +135,6 @@ body {
         width: 384px;
         height: 512px; /* 450 */
         display: flex;
-        margin: 0 10px;
         transition: transform .5s ease-in;
         transform: translateX(0);
     }
