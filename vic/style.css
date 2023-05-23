@@ -125,15 +125,16 @@ body {
         border: 3px solid var(--sec-color);
         border-radius: 5px;
         overflow: hidden;
-        max-width: 100%;
+        max-width: 90%;
         margin: 15px 10px;
         transition: transform .5 ease-in-out;
         box-shadow: 5px 5px 5px var(--black-shadow);
     }
 
     .img-container {
-        width: 384px;
-        height: 512px; /* 450 */
+        max-width: 384px;
+        width: 100%;
+        height: auto;
         display: flex;
         transition: transform .5s ease-in;
         transform: translateX(0);
@@ -141,6 +142,7 @@ body {
 
     .img-container img {
         width: 100%;
+        height: auto;
     }
 } 
 
