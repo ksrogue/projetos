@@ -13,7 +13,7 @@ function changeImage() {
         index = 0;
     }
 
-    imgContainer.style.transform = `translateX(${-index * 250}px)`;
+    imgContainer.style.transform = `translateX(${-index * 350}px)`;
 }
 
 function play() {
