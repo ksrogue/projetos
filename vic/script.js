@@ -1,10 +1,13 @@
 const imgs = document.querySelectorAll("img");
 const imgContainer = document.getElementById("img-container");
 const button = document.getElementById("button");
-let intervalo;
+const teste = document.getElementById("teste");
 
+let intervalo;
 let index = 0;
 let playing = false;
+
+console.log(teste.width);
 
 function changeImage() {
     index++;
@@ -13,7 +16,7 @@ function changeImage() {
         index = 0;
     }
 
-    imgContainer.style.transform = `translateX(${-index * 384}px)`;
+    imgContainer.style.transform = `translateX(${-index * teste.width}px)`;
 }
 
 function play() {
