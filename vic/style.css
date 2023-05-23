@@ -125,7 +125,7 @@ body {
         border: 3px solid var(--sec-color);
         border-radius: 5px;
         overflow: hidden;
-        max-width: 80%;
+        max-width: 100%;
         margin-top: 15px;
         margin-bottom: 15px;
         transition: transform .5 ease-in-out;
@@ -133,8 +133,8 @@ body {
     }
 
     .img-container {
-        width: 350px;
-        height: 550px; /* 450 */
+        width: 384px;
+        height: 512px; /* 450 */
         display: flex;
         transition: transform .5s ease-in;
         transform: translateX(0);
@@ -142,7 +142,6 @@ body {
 
     .img-container img {
         width: 100%;
-        object-fit: cover;
     }
 } 
 
