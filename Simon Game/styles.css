@@ -55,7 +55,7 @@ body {
   background-color: grey;
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 600px) {
   #level-title {
     display: none;
   }
