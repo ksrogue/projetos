@@ -32,6 +32,15 @@ $(document).on("keypress", function() {
   } 
 });
 
+// mesmo comando anterior, mas para touch no mobile;
+$(document).on("tap", function() {
+  if(!gameStarted) {
+    $("h1").text("Level 0");
+    nextSequence();
+    gameStarted = true;
+  } 
+});
+
 // chamada ao iniciar o jogo e sempre que o jogador acertar a sequencia;
 function nextSequence() { 
   userClickedPattern = [];
