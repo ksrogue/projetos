@@ -74,10 +74,10 @@ function checkAnswer(currentLevel) {
 }
 
 function gameOver() {
-  $(body).addClass("game-over");
+  $("body").addClass("game-over");
 
   setTimeout(function() {
-    $(body).removeClass("game-over");
+    $("body").removeClass("game-over");
   }, 200);
 }
 
