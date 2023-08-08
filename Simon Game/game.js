@@ -1,102 +1,85 @@
-// array com as cores do joguinho;
-const buttonColours = ["green", "red", "yellow", "blue"];
+// as cores que aparece no jogo;
+const buttonColours = ["green", "yellow", "red", "blue"];
 
-// checa se o game iniciou;
-let gameStarted = false;
-
-// level do jogo;
-let level = 0;
-
-// sequencia que o jogo irá gerar e o jogador precisa acertar;
+// padrão que o jogo irá gerar de forma aleatoria;
 let gamePattern = [];
 
-// sequencia que o jogador está selecionando as cores;
+// cores que o jogador clicou;
 let userClickedPattern = [];
 
-// checa a cor que o jogador escolheu;
-$(".btn").on("click", function() {
+// checa se o jogo começou;
+let gameStarted = false;
+
+// nível do jogo;
+let level = 0;
+
+// checa a cor que o jogador clicou;
+$(".items").on("click", function() {
   let userChosenColour = $(this).attr("id");
   userClickedPattern.push(userChosenColour);
-  playSound(userChosenColour);
+  playAudio(userChosenColour);
   animatePress(userChosenColour);
 
   checkAnswer(userClickedPattern.length - 1);
-});
+})
 
-// quando a primeira tecla for apertada, o jogo inicia;
-// $(document).on("keypress", function() {
-//   if(!gameStarted) {
-//     $("h1").text("Level 0");
-//     nextSequence();
-//     gameStarted = true;
-//   } 
-// });
-
-// quando a primeira tecla for apertada, o jogo inicia;
-$(".mobile-button").on("click", function() {
+// gera as cores aleatorias;
+$(".btn").on("click", function() {
   if(!gameStarted) {
-    $(".mobile-button").text("Level 0");
+    $(".btn").text("Level 0");
     nextSequence();
     gameStarted = true;
-  } 
-});
+  }
+})
 
-// chamada ao iniciar o jogo e sempre que o jogador acertar a sequencia;
-function nextSequence() { 
-  userClickedPattern = [];
+function nextSequence() {
   let randomNumber = Math.floor(Math.random() * 4);
-  let randomChosenColour = buttonColours[randomNumber];
-  gamePattern.push(randomChosenColour);
+  let colours = buttonColours[randomNumber];
+  gamePattern.push(colours);
 
-  playSound(randomChosenColour);
-  animatePress(randomChosenColour);
+  $(`.${colours}`).fadeOut(100).fadeIn(100);
+  playAudio(colours);
+  animatePress(colours);
 
   level++;
-  $(".mobile-button").text(`Level ${level}`);
-  
+  $(".btn").text("level " + level);
 }
 
-// checa se a cor que o jogador escolheu corresponde com a ultima cor mostrada;
-function checkAnswer(currentLevel) {
-  if(gamePattern[currentLevel] === userClickedPattern[currentLevel]) {
-    if(gamePattern.length === userClickedPattern.length) {
-      setTimeout(() => {
-        nextSequence();
-      }, 1000);
-    }
-  } else {
-   gameOver();
-  }
-}
-
-// toca o som correspondente ao botão clicado;
-function playSound(name) {
+function playAudio(name) {
   new Audio(`sounds/${name}.mp3`).play();
 }
 
-// toca uma animação no botão clicado;
 function animatePress(currentColour) {
   $(`.${currentColour}`).addClass("pressed");
 
-  setInterval(() => {
+  setTimeout(function() {
     $(`.${currentColour}`).removeClass("pressed");
   }, 100);
 }
 
-// chama o game over caso o jogador erre a sequencia;
-function gameOver() {
-  new Audio("sounds/wrong.mp3").play();
-  // $("h1").text("Game Over, Press Any Key to Restart");
-  $(".mobile-button").text("Game Over, Press Any Key to Restart");
-  $("body").addClass("game-over");
-  setTimeout(() => {
-    $(".mobile-button").text("Click to Start");
-    $("body").removeClass("game-over"); 
-    startOver();
-  }, 1000);
+function checkAnswer(currentLevel) {
+  if(gamePattern[currentLevel] == userClickedPattern[currentLevel]) {
+    if(gamePattern.length == userClickedPattern.length) { 
+      setTimeout(function() {
+        nextSequence();
+        userClickedPattern = [];
+      }, 1000)
+    }
+  } else {
+    new Audio("sounds/wrong.mp3").play();
+    $('.btn').text("Game Over! Aperte Novamente pra Recomeçar")
+    gameOver();
+  }
 }
 
-// recomeça o jogo após o game over;
+function gameOver() {
+  $(body).addClass("game-over");
+
+  setTimeout(function() {
+    $(body).removeClass("game-over");
+  }, 200);
+}
+
 function startOver() {
   level = 0;
   gamePattern = [];
