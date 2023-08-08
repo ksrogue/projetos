@@ -70,4 +70,10 @@ body {
     color: #011f3f;
     background-color: #fef2bf;
   }
+
+  .container { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
