@@ -24,18 +24,18 @@ $(".btn").on("click", function() {
 });
 
 // quando a primeira tecla for apertada, o jogo inicia;
-$(document).on("keypress", function() {
-  if(!gameStarted) {
-    $("h1").text("Level 0");
-    nextSequence();
-    gameStarted = true;
-  } 
-});
+// $(document).on("keypress", function() {
+//   if(!gameStarted) {
+//     $("h1").text("Level 0");
+//     nextSequence();
+//     gameStarted = true;
+//   } 
+// });
 
-// mesmo comando anterior, mas para touch no mobile;
+// quando a primeira tecla for apertada, o jogo inicia;
 $(".mobile-button").on("click", function() {
   if(!gameStarted) {
-    $("h1").text("Level 0");
+    $(".mobile-button").text("Level 0");
     nextSequence();
     gameStarted = true;
   } 
@@ -52,7 +52,7 @@ function nextSequence() {
   animatePress(randomChosenColour);
 
   level++;
-  $("h1").text(`Level ${level}`);
+  $(".mobile-button").text(`Level ${level}`);
   
 }
 
@@ -86,7 +86,7 @@ function animatePress(currentColour) {
 // chama o game over caso o jogador erre a sequencia;
 function gameOver() {
   new Audio("sounds/wrong.mp3").play();
-  $("h1").text("Game Over, Press Any Key to Restart");
+  // $("h1").text("Game Over, Press Any Key to Restart");
   $(".mobile-button").text("Game Over, Press Any Key to Restart");
   $("body").addClass("game-over");
   setTimeout(() => {

@@ -3,16 +3,6 @@ body {
   background-color: #011f3f;
 }
 
-.mobile-button {
-  display: none;
-}
-#level-title {
-  font-family: "Press Start 2P", cursive;
-  font-size: 3rem;
-  margin: 5%;
-  color: #fef2bf;
-}
-
 .container {
   display: block;
   width: 50%;
@@ -55,25 +45,20 @@ body {
   background-color: grey;
 }
 
-@media screen and (max-width: 600px) {
-  #level-title {
-    display: none;
-  }
-  .mobile-button {
-    display: block;
-    margin: 0 auto;
-    font-family: "Press Start 2P", cursive;
-    cursor: pointer;
-    padding: 5px;
-    font-size: 1.5em;
-    border-radius: 5px;
-    color: #011f3f;
-    background-color: #fef2bf;
-  }
+.mobile-button {
+  display: block;
+  margin: 0 auto;
+  font-family: "Press Start 2P", cursive;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 1.5em;
+  border-radius: 5px;
+  color: #011f3f;
+  background-color: #fef2bf;
+}
 
-  .container { 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
