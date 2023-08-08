@@ -32,6 +32,7 @@ $(".btn").on("click", function() {
   }
 })
 
+
 function nextSequence() {
   let randomNumber = Math.floor(Math.random() * 4);
   let colours = buttonColours[randomNumber];
