@@ -33,7 +33,7 @@ $(document).on("keypress", function() {
 });
 
 // mesmo comando anterior, mas para touch no mobile;
-$(document).on("tap", function() {
+$(".mobile-button").on("click", function() {
   if(!gameStarted) {
     $("h1").text("Level 0");
     nextSequence();
@@ -87,11 +87,13 @@ function animatePress(currentColour) {
 function gameOver() {
   new Audio("sounds/wrong.mp3").play();
   $("h1").text("Game Over, Press Any Key to Restart");
+  $(".mobile-button").text("Game Over, Press Any Key to Restart");
   $("body").addClass("game-over");
   setTimeout(() => {
-    $("body").removeClass("game-over");
+    $(".mobile-button").text("Click to Start");
+    $("body").removeClass("game-over"); 
     startOver();
-  }, 200);
+  }, 1000);
 }
 
 // recomeça o jogo após o game over;
