@@ -126,7 +126,7 @@ main {
 footer {
     width: 100%;
     background-color: yellow;
-    margin-top: 15px;
+    margin-top: 25px;
     text-align: center;
     color: blue;
 }
@@ -136,7 +136,25 @@ footer p, a {
 }
 
 
+@media screen and (min-width: 768px) {
+    .hands {
+        max-width: 768px;
+    }
 
+    .player-hand {
+        width: 150px;
+        height: 150px;
+    }
+
+    .pontos {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 220px;
+        margin: 10px;
+    }
+    
+}
 
 
 
