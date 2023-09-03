@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pedra, Papel ou Tesoura</title>
+</head>
+<body>
+
+    <header>
+        <h1>Jo Ken Po</h1>
+    </header>
+
+    <main>
+        <div class="hands">
+            <div class="player-hand" id="0">
+                <img src="images/yellow-rock.png" alt="player rock">
+            </div>
+            <div class="player-hand" id="1">
+                <img src="images/yellow-paper.png" alt="player papper">
+            </div>
+            <div class="player-hand" id="2">
+                <img src="images/yellow-scissor.png" alt="player scissor">
+            </div>
+        </div>
+
+        <div class="info">
+            <div class="msg">Você Venceu!</div>
+            <span class="time">3</span>
+        </div>
+
+        <div class="enemy-hand">
+            <img src="images/com-hand.png" alt="enemy hand" class="enemy-hand-img">
+        </div>
+
+        <div class="pontos">
+            <p class="pPoints">Sua Pontuação: 0</p>
+            <p class="cPoints">Pontução do CPU: 0</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por <a href="https://instagram.com/ks.rogue">@ksrogue</a></p>
+    </footer>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
