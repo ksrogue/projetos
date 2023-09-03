@@ -97,6 +97,7 @@ function countDown(id) {
 
 function replay() {
   selected = false;
+  enemyHand.setAttribute("src", `images/com-hand.png`);
   msg.innerHTML = "Escolha Novamente";
   time.innerHTML = "3";
   playerHand.forEach((element) => {
