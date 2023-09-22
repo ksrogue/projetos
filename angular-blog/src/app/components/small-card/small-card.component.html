@@ -4,7 +4,7 @@
             <img src="{{ photoCover }}" alt="">
         </div>
         <div class="small-card-title">
-            <a href="#"><h1>{{ cardTitle }}</h1></a>
+            <a [routerLink]="['content', id]"><h1>{{ cardTitle }}</h1></a>
         </div>
     </div>
     <div class="small-card-row">
