@@ -10,6 +10,8 @@ export class CardComponent implements OnInit {
   @Input()
   gameCover: string = "";
   @Input()
+  gameDisponibility: string = "";
+  @Input()
   gameLabel: string = "";
   @Input()
   gameType: string = "";

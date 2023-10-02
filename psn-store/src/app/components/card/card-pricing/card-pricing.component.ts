@@ -7,6 +7,8 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CardPricingComponent implements OnInit{
   @Input()
+  gameDisponibility: string = "";
+  @Input()
   gameType: string = "";
   @Input()
   gamePrice: string = "";
