@@ -3,53 +3,46 @@
   "questions":[
     {
       "id":1,
-      "question": "Qual super poder você escolheria ?",
+      "question": "Qual arma você escolheria?",
       "options":[
-        {"id": 1, "name":"Raios-Lasers", "alias":"A"},
-        {"id": 2, "name":"Voar", "alias":"B"},
-        {"id": 3, "name":"Explodir coisas", "alias":"A"},
-        {"id": 4, "name":"Curar feridas", "alias":"B"},
-        {"id": 5, "name":"Soltar fogo pelas mãos", "alias":"A"}
+        {"id": 1, "name":"Espada da Luz", "alias":"A"},
+        {"id": 2, "name":"Lança das Sombras", "alias":"B"},
+        {"id": 3, "name":"Cajado da Natureza", "alias":"A"},
+        {"id": 4, "name":"Adagas Sangrentas", "alias":"B"}
       ]
     },
     {
       "id":2,
-      "question": "Quem você salvaria primeiro ?",
+      "question": "Onde você viveria?",
       "options":[
-        {"id": 1, "name":"Crianças", "alias":"A"},
-        {"id": 2, "name":"Idosos", "alias":"A"},
-        {"id": 3, "name":"Não saberia escolher", "alias":"B"}
+        {"id": 1, "name":"Vila Legal", "alias":"A"},
+        {"id": 2, "name":"Reino Celestial", "alias":"A"},
+        {"id": 3, "name":"Cavernas Negras", "alias":"B"}
       ]
     },
     {
       "id":3,
-      "question": "Qual a sua maior preocupação ao enfretar outro super ser ?",
+      "question": "Qual seria sua montaria?",
       "options":[
-        {"id": 1, "name":"Não destruir prédios", "alias":"B"},
-        {"id": 2, "name":"Socar a cara do inimigo", "alias":"A"},
-        {"id": 3, "name":"Não sujar meu traje", "alias":"A"},
-        {"id": 4, "name":"Não deixar ninguém se ferir", "alias":"B"}
+        {"id": 1, "name":"Cavalo Flamejante", "alias":"B"},
+        {"id": 2, "name":"Pégasus Celestial", "alias":"A"},
+        {"id": 3, "name":"Corcel Real", "alias":"A"},
+        {"id": 4, "name":"Dragão Escamoso", "alias":"B"}
       ]
     },
     {
       "id":4,
-      "question": "Qual o seu maior foco ?",
+      "question": "Qual seria sua classe?",
       "options":[
-        {"id": 1, "name":"Ficar rico com poderes", "alias":"A"},
-        {"id": 2, "name":"Salvar a cidade", "alias":"B"}
-      ]
-    },
-    {
-      "id":5,
-      "question": "Qual o seu apelido de super ser ?",
-      "options":[
-        {"id": 1, "name":"O Terrivel", "alias":"A"},
-        {"id": 2, "name":"Amigo da vizinhança", "alias":"B"}
+        {"id": 1, "name":"Guerreiro", "alias":"A"},
+        {"id": 2, "name":"Assassino", "alias":"B"},
+        {"id": 3, "name":"Sacerdote", "alias":"A"},
+        {"id": 4, "name":"Cavaleiro Negro", "alias":"B"}
       ]
     }
   ],
   "results":{
-    "A": "Você muito provavelmente seria um super vilão!",
-    "B": "Você muito provavelmente seria um super Herói!"
+    "A": "Você muito provavelmente seria um grande herói para o reino!",
+    "B": "Você tem potencial para ser um dos vilões mais terríveis do reino!"
   }
 }
