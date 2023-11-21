@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- imports de css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- import do bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="menu">
+          <li><a href="#">Sobre Mim</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="profile">
+        <div class="profile">
+          <img
+            class="profile-photo"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU_3N837SZ4kX4PYCXMgLUwlFippWbDR_Mach-2IU&s"
+            alt="foto de David William"
+          />
+          <h2>Olá, sou o David William!</h2>
+          <div class="text">
+            <p>
+              Um entusiasta de tecnologia de <span class="idade"></span> anos
+              com um gosto especial pelo mundo da programação.
+            </p>
+            <p>
+              Minha jornada começou quando decidi criar meus próprios jogos,
+              mergulhando de cabeça no mundo do desenvolvimento de software, mas
+              foi no desenvolvimento web que despertei ainda mais o meu
+              interesse. Desde então, tenho dedicado meu tempo e energia a
+              aprimorar minhas habilidades de programação e a explorar novas
+              maneiras de trazer minhas ideias para a vida digital.
+            </p>
+
+            <div class="habilidades">
+              <h3>Habilidades</h3>
+              <p>HTML, CSS e JavaScript, mas estou sempre aprendendo coisas novas nesse vasto mundo da tecnologia.</p>
+            </div>
+          </div>
+        </div>
+        <hr>
+      </section>
+
+      <section id="projetos">
+        <h2>Alguns dos meus projetos</h2>
+        <div class="projetos-container">
+          <span class="arrow-button" onclick="previousProject()">
+            <i class="bi bi-caret-left-fill"></i>
+          </span>
+
+          <div class="projetos mostrar">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/310px-Placeholder_view_vector.svg.png"
+              alt="placeholder"
+            />
+            <div class="projeto-nome"><a href="#">Calculadora</a></div>
+            <p class="projeto-desc">
+              Um projeto simples usando HTML, CSS e JavaScript.
+            </p>
+          </div>
+
+          <span class="arrow-button" onclick="nextProject()">
+            <i class="bi bi-caret-right-fill"></i>
+          </span>
+        </div>
+        <hr>
+      </section>
+
+      <section id="contato">
+        <h2>Minhas Redes</h2>
+        <div class="social-media">
+          <ul>
+            <li>
+              <a href="https://www.instagram.com/ks.rogue" target="_blank"
+                ><i class="bi bi-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.github.com/ksrogue" target="_blank"
+                ><i class="bi bi-github"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/ksrogue" target="_blank"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://wa.link/j88ac0" target="_blank"
+                ><i class="bi bi-whatsapp"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

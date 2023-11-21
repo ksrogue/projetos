@@ -1,0 +1,172 @@
+/*
+    Cores
+    background color: #171717
+    menu color: #121212
+    letter color: #CDCDCD
+    #232323 #2E2E2E
+    #252525 #333333
+    #272727 #363636
+    #2C2C2C #383838
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: #cdcdcd;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #171717;
+  min-height: 100vh;
+}
+
+hr {
+  border-color: #cdcdcd;
+  width: 90%;
+  margin: 0 auto;
+}
+
+h2 {
+  font-weight: 700;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+  margin: 8px;
+  color: #FFF;
+  text-align: center;
+}
+
+.menu {
+  background-color: #121212;
+  width: 100%;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  border-bottom: 1px solid #cdcdcd;
+
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.menu li {
+  margin-left: 32px;
+  transition: all 0.5s ease;
+}
+.menu li:hover {
+  transform: scale(1.1);
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 64px;
+  margin-bottom: 16px;
+}
+.profile-photo {
+  border-radius: 50%;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  margin: 16px;
+  transition: all ease 0.5s;
+}
+.profile-photo:hover {
+  transform: scale(1.1);
+}
+
+.profile .text {
+  margin: 0 16px;
+}
+.text p {
+  margin-top: 8px;
+}
+
+.habilidades {
+  margin-top: 16px;
+}
+
+#projetos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #1E1E1E;
+  width: 100%;
+}
+
+.projetos-container {
+  display: flex;
+  align-items: center;
+}
+
+.arrow-button i {
+  color: #FFF;
+  font-size: 50px;
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
+.arrow-button:hover {
+  transform: scale(1.1);
+}
+
+.projetos {
+  background-color: #121212;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 16px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  min-width: 300px;
+  /* display: none; */
+}
+.projetos img {
+  border-radius: 8px;
+  margin: 12px;
+  width: 90%;
+}
+.projetos .projeto-nome a {
+  color: #fff;
+}
+.projeto-nome {
+  transition: all ease 0.5s;
+  font-size: 1.1em;
+}
+.projeto-nome:hover {
+  transform: scale(1.1);
+}
+.projeto-desc {
+  margin: 12px;
+}
+
+
+.social-media ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  margin: 32px;
+}
+.social-media ul li {
+  transition: all ease 0.5s;
+}
+.social-media ul li:hover {
+  transform: scale(1.3);
+}
+.social-media ul li a {
+  font-size: 32px;
+}
+
+.mostrar {
+  display: flex;
+}
