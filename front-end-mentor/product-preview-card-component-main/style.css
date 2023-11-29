@@ -1,0 +1,198 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Dark cyan: hsl(158, 36%, 37%)
+- Cream: hsl(30, 38%, 92%)
+
+### Neutral
+
+- Very dark blue: hsl(212, 21%, 14%)
+- Dark grayish blue: hsl(228, 12%, 48%)
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 14px
+
+### Font
+
+- Family: [Montserrat](https://fonts.google.com/specimen/Montserrat)
+- Weights: 500, 700
+
+- Family: [Fraunces](https://fonts.google.com/specimen/Fraunces)
+- Weights: 700 */
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+:root {
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  /* neutral */
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+  --montserrat: "Montserrat", san-serif;
+  --fraunces: "Fraunces", san-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+body {
+  width: 375px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cream);
+  margin: 0 auto;
+}
+
+main {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 10px;
+  margin-top: 135px;
+  background-color: var(--white);
+}
+
+.image {
+  background-image: url(images/image-product-mobile.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 240px;
+  border-radius: 10px 10px 0 0;
+}
+
+h2 {
+  font-family: var(--montserrat);
+  font-weight: 500;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--dark-grayish-blue);
+  font-size: 12px;
+
+  margin: 24px 25px 10px;
+}
+
+h1 {
+  font-family: var(--fraunces);
+  font-size: 2.3em;
+  margin: 0 25px;
+  font-weight: 700;
+  line-height: 32px;
+
+  color: var(--very-dark-blue);
+}
+
+p {
+  font-family: var(--montserrat);
+  color: var(--dark-grayish-blue);
+  margin: 15px 25px;
+  margin-right: 40px;
+  line-height: 25px;
+}
+
+.price-values {
+  margin-left: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.current-price {
+  font-family: var(--fraunces);
+  color: var(--dark-cyan);
+  font-size: 2.3em;
+  margin-right: 20px;
+}
+
+.normal-price {
+  font-family: var(--montserrat);
+  text-decoration: line-through;
+  color: var(--dark-grayish-blue);
+}
+
+button {
+  background-color: var(--dark-cyan);
+  color: var(--white);
+  font-family: var(--montserrat);
+  border-radius: 10px;
+  width: 83%;
+  height: 48px;
+  margin: 15px 25px 23px;
+  border: none;
+}
+button img {
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 700px) {
+  body {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+  }
+
+  main {
+    flex-direction: row;
+    width: 600px;
+  }
+
+  .image {
+    width: 50%;
+    height: 450px;
+    background-image: url(images/image-product-desktop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px 0 0 10px;
+  }
+
+  .content {
+    width: 50%;
+    height: 450px;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    margin-right: 70px;
+    margin-bottom: 25px;
+  }
+
+  p {
+    margin-right: 50px;
+    margin-bottom: 25px;
+  }
+
+  button {
+    margin-top: 30px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: hsl(158, 34%, 23%);
+  }
+}
