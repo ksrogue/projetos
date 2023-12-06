@@ -1,0 +1,178 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Soft blue: hsl(215, 51%, 70%)
+- Cyan: hsl(178, 100%, 50%)
+
+### Neutral
+
+- Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 18px
+
+### Font
+
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 300, 400, 600 */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --very-dark-blueMBG: hsl(217, 54%, 11%);
+    --very-dark-blueCBG: hsl(216, 50%, 16%);
+    --very-dark-blueLine: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+    --main-font: 'Outfit', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: var(--main-font);
+}
+
+body {
+    width: 375px;
+    min-height: 100vh;
+
+    background-color: var(--very-dark-blueMBG);
+
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    width: 90%;
+    background-color: var(--very-dark-blueCBG);
+    border-radius: 15px;
+    padding: 25px;
+}
+
+main > img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: var(--white);
+    margin: 8px 0;
+}
+
+p {
+    color: var(--soft-blue);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 25px;
+    margin: 8px 0;
+}
+
+.numbers {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.eth {
+    color: var(--cyan);
+    display: flex;
+    gap: 10px;
+
+    width: 50%;
+}
+.eth span {
+    font-size: 15px;
+}
+
+.days-left {
+    color: var(--soft-blue);
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+
+    width: 50%;
+}
+.days-left span {
+    font-size: 16px;
+}
+
+hr {
+   border: none;
+   border-top: 1px solid rgba(131, 130, 130, 0.252);
+   margin: 16px 0;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: var(--soft-blue);
+}
+.profile span {
+    font-size: 15px;
+    font-weight: 300;
+}
+.profile img {
+    width: 40px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+}
+
+.name {
+    color: var(--white);
+}
+
+@media (min-width: 700px) {
+    body {
+        width: 1270px;
+    }
+
+    main {
+        width: 375px;
+    }
+
+    h1 {
+        cursor: pointer;
+    }
+    h1:hover {
+        color: var(--cyan);
+    }
+
+    main > img {
+        cursor: pointer;
+    }
+
+
+    .name {
+        cursor: pointer;
+    }
+    .name:hover {
+        color: var(--cyan);
+    }
+}
