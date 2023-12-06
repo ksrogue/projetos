@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --main-font: 'Poppins', sans-serif;
+    --main-color: #635985;
+    --s-color: #443C68;
+    --t-color: #393053;
+    --f-color: #18122B;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: var(--main-font);
+}
+
+body {
+    background-color: var(--f-color);
+
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.lyrics-creator-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lyrics-creator-content {
+    background-color: var(--t-color);
+    width: 90%;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, .5);
+    padding: .5em;
+    margin: .5em;
+
+    display: flex;
+    flex-direction: column;
+    gap: .3em;
+}
+
+input, textarea {
+    outline: none;
+    background-color: var(--main-color);
+}
+input {
+    height: 2.2em;
+    padding: .5em;
+}
+
+.music-name, .band-name {
+    display: flex;
+    flex-direction: column;
+    gap: .3em;
+    color: #fff;
+}
+
+.colors {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5.5em;
+    color: #fff;
+    margin: 1em;
+}
+
+.background-color, .letter-color {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#background, #letter {
+    background-color: transparent;
+    border: none;
+    appearance: none;
+    width: 50px;
+    height: 50px;
+}
+#background::-webkit-color-swatch, #letter::-webkit-color-swatch {
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+button {
+    border-radius: 0px 0px 10px 10px;
+    border: none;
+    padding: .5em;
+    background-color: var(--f-color);
+    color: #fff;
+
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, .5);
+    cursor: pointer;
+}
+button:hover {
+    border: 1px solid #fff;
+}
+
+
+/* ------------------------------------------ preview ------------------------------------------ */
+
+.lyrics-creator-preview {
+    width: 90%;
+    background-color: var(--s-color);
+
+    display: none;
+    flex-direction: column;
+    padding: 1em;
+
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, .5);
+}
+
+.music-name-preview {
+    letter-spacing: 2px;
+    margin-bottom: -10px;
+}
+.band-name-preview {
+    font-size: 1.1em;
+}
+
+hr {
+    border: 1px solid black;
+}
+
+.lyrics-preview {
+    margin: 1em 2em;
+    width: 60%;
+    font-size: 1.2em;
+}
+
+.download-button {
+    background-color: var(--main-color);
+}

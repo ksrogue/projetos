@@ -1,0 +1,102 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+- White: hsl(0, 0%, 100%)
+- Light gray: hsl(212, 45%, 89%)
+- Grayish blue: hsl(220, 15%, 55%)
+- Dark blue: hsl(218, 44%, 22%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 15px
+
+### Font
+
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 400, 700 */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+    --main-font: 'Outfit', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: var(--main-font);
+}
+
+body {
+    width: 375px;
+    min-height: 100vh;
+    
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--light-gray);
+}
+
+main {
+    background-color: var(--white);
+    width: 90%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 15px;
+
+    border-radius: 20px;
+    box-shadow: 1px 1px 35px rgba(0, 0, 0, 0.326);
+
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+h1 {
+    color: var(--dark-blue);
+    font-size: 1.5em;
+    font-weight: 700;
+
+    margin: 15px 20px;
+}
+
+p {
+    color: var(--grayish-blue);
+    font-weight: 400;
+    margin: 0 22px 20px;
+}
+
+
+@media (min-width: 700) {
+    body {
+        width: 1270px;
+    }
+
+    main {
+        width: 375px;
+    }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Lyrics Card Creator</title>
+  </head>
+  <body>
+    <main class="lyrics-creator-container">
+      <div class="lyrics-creator-content">
+        <div class="music-info">
+          <div class="music-name">
+            <label for="music-name">Nome da música</label>
+            <input type="text" id="music-name" autocomplete="off"/>
+          </div>
+          <div class="band-name">
+            <label for="band-name">Nome da banda</label>
+            <input type="text" id="band-name" autocomplete="off"/>
+          </div>
+        </div>
+        <textarea cols="30" rows="10" class="lyrics-area">
+Coloque a letra da música aqui.</textarea
+        >
+
+        <div class="colors">
+            <div class="background-color">
+                <label for="background">Cor de fundo</label>
+                <input type="color" id="background">
+            </div>
+            <div class="letter-color">
+                <label for="letter">Cor da letra</label>
+                <input type="color" id="letter">
+            </div>
+        </div>
+        <button class="generate-button" onclick="generatePreview()">gerar preview</button>
+      </div>
+
+      <div class="lyrics-creator-preview">
+        <h1 class="music-name-preview">Afterlife</h1>
+        <h2 class="band-name-preview">Avenged Sevenfold</h2>
+        <hr>
+        <span class="lyrics-preview">
+            "How do I live without the ones I love?
+            Time still turns the pages of the book it's burned
+            Place and time always on my mind
+            I have so much to say but you're so far away"
+        </span>
+        <button class="download-button">baixar imagem</button>
+      </div>
+    </main>
+
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
