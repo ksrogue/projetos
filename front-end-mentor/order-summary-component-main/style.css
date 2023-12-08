@@ -1,0 +1,171 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+
+### Neutral
+
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 16px
+
+### Font
+
+- Family: [Red Hat Display](https://fonts.google.com/specimen/Red+Hat+Display)
+- Weights: 500, 700, 900 */
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+    --main-font: 'Red Hat Display', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--main-font);
+    font-size: 16px;
+}
+
+body {
+    width: 375px;
+    min-height: 100vh;
+    background-color: var(--pale-blue);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    width: 88%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--Very-pale-blue);
+    border-radius: 20px;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, .2);
+}
+
+main > img {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+}
+
+h1 {
+    color: var(--Dark-blue);
+    font-size: 1.35em;
+    font-weight: 900;
+
+    margin: 27px 0 20px;
+}
+
+p {
+    color: var(--Desaturated-blue);
+    text-align: center;
+    margin: 0 33px;
+    line-height: 25px;
+}
+
+.plan {
+    width: 100%;
+    margin: 40px;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.music-plan {
+    display: flex;
+    gap: 20px;
+}
+
+.plan-value {
+    display: flex;
+    flex-direction: column;
+}
+.annual-plan {
+    color: var(--Dark-blue);
+    font-weight: 900;
+}
+.year-value {
+    color: var(--Desaturated-blue);
+}
+
+.plan a {
+    color: var(--Bright-blue);
+    font-size: 14px;
+    font-weight: 900;
+}
+.plan a:hover {
+    text-decoration: none;
+    color: #5421b9af;
+}
+
+button {
+    background-color: var(--Bright-blue);
+    color: var(--Very-pale-blue);
+
+    border: none;
+    border-radius: 10px;
+    width: 85%;
+    height: 50px;
+    margin-bottom: 20px;
+    font-weight: 700;
+
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, .2);
+    cursor: pointer;
+}
+button:hover {
+    background-color: #5421b9af;
+}
+
+.cancel {
+    text-decoration: none;
+    color: var(--Desaturated-blue);
+    font-weight: 700;
+    margin-bottom: 27px;
+}
+.cancel:hover {
+    color: var(--Dark-blue);
+}
+
+@media (min-width: 700px) {
+    body {
+        width: 1270px;
+    }
+    main {
+        width: 450px;
+    }
+    p {
+        margin: 0 45px;
+    }
+}
