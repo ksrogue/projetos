@@ -100,6 +100,7 @@ p {
     font-family: var(--lexend-ceca);
     font-size: 15px;
     margin-right: 20px;
+    line-height: 25px;
 }
 
 button {
@@ -173,5 +174,6 @@ button:hover {
 
     button {
         margin-top: 50px;
+        padding: 10px 30px;
     }
 }
