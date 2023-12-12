@@ -85,14 +85,14 @@ main {
 }
 
 img {
-    width: 50px;
+    width: 70px;
 }
 
 .header {
-    color: var(--transparent-white);
+    color: var(--light-gray);
     font-family: var(--big-shoulders);
     text-transform: uppercase;
-    font-size: 2em;
+    font-size: 2.5em;
 }
 
 p {
